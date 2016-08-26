@@ -67,6 +67,7 @@ void MainWindow::onMQTT_Connected()
 
 void MainWindow::onMQTT_Connacked(quint8 ack)
 {
+    Q_UNUSED(ack)
     //todo: should emit on server suback
     /*
     QString ackStatus;
@@ -99,6 +100,7 @@ void MainWindow::onMQTT_Connacked(quint8 ack)
 
 void MainWindow::onMQTT_error(QMQTT::ClientError err)
 {
+    Q_UNUSED(err)
     //todo: should emit on server suback
     /*
     QString errInfo;
