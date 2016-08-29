@@ -15,8 +15,8 @@ TEMPLATE = app
 
 
 #NOTICE: add DYLD_LIBRARY_PATH to build environment.
-INCLUDEPATH += ../src
-LIBS += -L../src -lqmqtt
+INCLUDEPATH += /usr/local/include/qmqtt
+LIBS += -L/usr/local/lib -lqmqtt
 
 SOURCES += main.cpp \
     mainwindow.cpp \
